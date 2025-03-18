@@ -1,10 +1,19 @@
 import React from 'react'
+import Header from '../Header/Header'
+import { Outlet } from 'react-router-dom'
 
 function MainLayout(){
 
     return(
         <>
-            <h1>Welcome to MainLayout</h1>
+          <main>
+            <header>
+                 <Header/>   
+            </header>  
+
+                <Outlet/>
+
+          </main>
         </>
     )
 }

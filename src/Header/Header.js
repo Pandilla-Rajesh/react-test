@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Hedaer = () =>{
+const Header = () =>{
     return(
         <>
             <h1>Welcome to Header Section</h1>
         </>
     )
 }
-export default Hedaer
+export default Header
