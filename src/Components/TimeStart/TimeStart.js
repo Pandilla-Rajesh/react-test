@@ -46,7 +46,7 @@ function TimeStart(){
                 <div>
                     <h1>Time:{time}</h1>
                     <h2>date format: {currentDate.toLocaleString()}</h2>
-                    <button onClick={()=>setIsStop(!isstop)}>
+                    <button className='btn btn-primary' onClick={()=>setIsStop(!isstop)}>
                         {isstop ? 'stop' : 'start'}
                     </button>
                 </div>
