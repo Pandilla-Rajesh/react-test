@@ -1,7 +1,9 @@
-import React, { Suspense } from 'react'
+import React, { lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import MainLayout from './MainLayout/MainLayout'
-import Login from './Components/Login/Login'
+
+const MainLayout = lazy(()=>import('./MainLayout/MainLayout.js'))
+const Login = lazy(()=>import('./Components/Login/Login.js'))
+const ApiModals = lazy(()=>import('./Components/ApiModals/ApiModals.js'))
 
 function Approutes(){
 
@@ -12,7 +14,7 @@ function Approutes(){
     {path:'/', element:(<Suspense fallback={<div>...Loading</div>}><MainLayout/></Suspense>),
     
     children:[
-      {}
+      {path:'apimodals', element:(<Suspense fallback={<div>...Loading</div>}><ApiModals/></Suspense>)}
     ]
 
   },
