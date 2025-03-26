@@ -80,3 +80,29 @@ p,blockquote{
 .info{
     padding: 70px 0px;
 }
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(105, 19, 19);
+    transition: all 0.3s ease-in-out .1s;
+    animation: bounces infinite alternate 1s ease-in-out;
+}
+
+@keyframes bounces{
+    0%{
+        transform: translateX(0);
+        transform: translateX(50%);
+    }
+}
+
+.info-register{
+    background-color: rgb(31,64,169);
+    position: relative;
+    .info-reg-layout{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    }
+}
