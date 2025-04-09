@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () =>{
     return(
         <>
-            <h1>Welcome to Home Page</h1>
+            <h1>Welcome to Home Page coming</h1>
         </>
     )
 }

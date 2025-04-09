@@ -56,6 +56,10 @@ p,blockquote{
     margin: 0px;
 }
 
+:root{
+    --white-color:#fff;
+}
+
 .info-login{
     background: url('./assets/images/login-screen.png') no-repeat;
     background-size: cover;
@@ -104,5 +108,18 @@ p,blockquote{
     align-items: center;
     justify-content: center;
     height: 100dvh;
+    }
+}
+
+.navbar-info{
+    position: relative;
+}
+.navbar-info{
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: var(--white-color);
+            }
+        }
     }
 }

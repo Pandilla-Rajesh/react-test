@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Props from './Components/Props/Props.js'
 
 const MainLayout = lazy(()=>import('./MainLayout/MainLayout.js'))
 const Login = lazy(()=>import('./Components/Login/Login.js'))
@@ -18,6 +19,7 @@ function Approutes(){
     
     children:[
       {path:'home', element:(<Suspense fallback={<div>...Loading</div>}><Home/></Suspense>)},
+      {path:'props', element:(<Suspense fallback={<div>...Loading</div>}><Props/></Suspense>)},
       {path:'apimodals', element:(<Suspense fallback={<div>...Loading</div>}><ApiModals/></Suspense>)}
     ]
 
